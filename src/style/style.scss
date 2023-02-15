@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "RubikBold";
+  src: url(../assets/fonts/Rubik-Medium.ttf);
+  // font-weight: bold;
+}
+@font-face {
+  font-family: "RubikReg";
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+  // font-weight: bold;
+}
+
+.nav {
+  z-index: 1;
+}
+
+.navbar-item {
+  font-family: "RubikBold";
+  // font-weight: bold;
+  color: black;
+  & .headerImage1 {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+  }
+  & .headerImage2 {
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  & .headerImage5 {
+    background-repeat: no-repeat;
+    position: absolute;
+    // right: 0;
+    bottom: 0;
+  }
+}
+
+.banner-section {
+  // background-color: aqua;
+  //   height: px;
+  background-image: url(../assets/icons/Assets3.png),
+    url(../assets/icons/Assets4.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%, 100% 100%;
+
+  & .headerImage6 {
+    display: flex;
+    align-items: end;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+      margin-top: 10rem;
+    }
+
+    img {
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+    }
+  }
+
+  & .banner-content-section {
+    // display: flex;
+    // position: relative;
+    height: 701px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    img {
+      @media screen and (max-width: 1200px) {
+        width: 125%;
+      }
+      @media screen and (max-width: 992px) {
+        width: 159%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 86%;
+      }
+    }
+
+    & .banner-content {
+      align-items: center;
+      display: flex;
+      //   margin-top: 161px;
+      padding-top: 100px;
+      flex-direction: column;
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        padding-top: 0px;
+      }
+
+
+      & .fontbold {
+        font-family: "RubikBold";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 66px;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 31px;
+          line-height: 40px;
+        }
+      }
+
+      & .fontreg {
+        font-family: "RubikReg";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+.about-section {
+  position: relative;
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+
+    @media screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    // @media screen and (max-width: 992px) {
+    //   display: flex;
+    //   justify-content: center;
+    //   font-size: 42px;
+    //   line-height: 50px;
+    // }
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  & .fontreg {
+    font-family: "RubikReg";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  & .underline-item {
+    background-image: url(../assets/icons/Underline.png);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding: 16px;
+    @media screen and (max-width: 1400px) {
+      background-position: 50% 100%;
+    }
+    @media screen and (max-width: 992px) {
+      background-position: 50% 100%;
+    }
+  }
+  & .positiondata {
+    @media screen and (max-width: 1400px) {
+      display: flex;
+      flex-direction: column-reverse !important ;
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse !important ;
+    }
+  }
+  & .about-contentdata {
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    & .fontbold1 {
+      font-family: "RubikBold";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & .fontreg1 {
+      font-family: "RubikReg";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  img {
+    max-width: -webkit-fill-available;
+  }
+}
+
+.service-section {
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 43px;
+      line-height: 53px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+
+  & .underline-item {
+    background-image: url(../assets/icons/Underline.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding: 16px;
+  }
+  & .positiondata {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse !important ;
+    }
+  }
+  & .sevices-content {
+    display: flex;
+    max-width: -webkit-fill-available;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .img-data {
+      @media screen and (max-width: 768px) {
+        max-width: 60%;
+      }
+    }
+    & .sevices-content-data {
+      @media screen and (max-width: 768px) {
+        align-items: center !important;
+        text-align: center !important;
+      }
+
+      & .fontbold {
+        font-family: "RubikBold";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 50px;
+        
+        @media screen and (max-width: 768px) {
+          font-size: 35px;
+          line-height: 50px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 27px;
+          line-height: 34px;
+        }
+      }
+
+      & .fontreg {
+        font-family: "RubikReg";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.team-section {
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    @media screen and (max-width: 992px) {
+      font-size: 43px;
+      line-height: 53px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  & .underline-item {
+    background-image: url(../assets/icons/Underline.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding: 16px;
+  }
+  & .team-content {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.project-section {
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    @media screen and (max-width: 992px) {
+      font-size: 43px;
+      line-height: 53px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  & .underline-item {
+    background-image: url(../assets/icons/Underline.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 22rem;
+    padding: 16px;
+  }
+
+  .project-content {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+.client-section {
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    @media screen and (max-width: 992px) {
+      font-size: 43px;
+      line-height: 53px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+
+  & .underline-item {
+    background-image: url(../assets/icons/Underline.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding: 16px;
+  }
+  & .client-content {
+    & .client-content-data {
+      flex-wrap: wrap;
+      align-items: center;
+      & .clientimg {
+        @media screen and (max-width: 1200px) {
+          max-width: 150px;
+        }
+
+        @media screen and (max-width: 992px) {
+          max-width: 120px;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: 80px;
+          justify-content: space-around;
+        }
+
+        @media screen and (max-width: 576px) {
+          max-width: 70px;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  & .fontbold {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 221%;
+  }
+  & .fontreg {
+    font-family: "RubikBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 31px;
+  }
+  & .list-unstyled {
+    @media screen and (max-width: 991px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

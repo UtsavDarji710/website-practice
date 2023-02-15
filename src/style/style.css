@@ -1,0 +1,51 @@
+.banner-section .headerImage1 {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+.banner-section .headerImage2 {
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.banner-section .headerImage3 {
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.banner-section .headerImage4 {
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.banner-section .headerImage5 {
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+.banner-section .headerImage6 {
+  background-repeat: no-repeat;
+  position: relative;
+  left: 171px;
+  top: 16.3rem;
+  z-index: 2;
+}
+.banner-section .banner-content-section {
+  position: relative;
+  height: 700px;
+}
+.banner-section .banner-content-section .banner-content {
+  position: relative;
+  right: 80px;
+  float: right;
+  top: -22rem;
+  width: 375px;
+}
+
+.about-section {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
